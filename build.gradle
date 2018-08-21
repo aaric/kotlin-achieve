@@ -1,5 +1,5 @@
 group 'com.github.aaric'
-version '0.1.1-SNAPSHOT'
+version '0.1.2-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: "kotlin"
@@ -17,7 +17,6 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.+")
     compile("org.jetbrains.kotlin:kotlin-reflect:1.2.+")
 
-    testCompile("junit:junit:4.12")
     testCompile "org.jetbrains.kotlin:kotlin-test:1.2.+"
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:1.2.+"
 }
