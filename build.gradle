@@ -1,5 +1,5 @@
 group 'com.github.aaric'
-version '0.1.0-SNAPSHOT'
+version '0.1.1-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: "kotlin"
@@ -12,7 +12,6 @@ repositories {
 }
 
 dependencies {
-    compile("org.slf4j:slf4j-api:1.7.+")
     compile("org.apache.commons:commons-lang3:3.+")
 
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.+")
@@ -21,9 +20,6 @@ dependencies {
     testCompile("junit:junit:4.12")
     testCompile "org.jetbrains.kotlin:kotlin-test:1.2.+"
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:1.2.+"
-
-    testRuntime("org.apache.logging.log4j:log4j-slf4j-impl:2.11.+")
-    testRuntime("org.apache.logging.log4j:log4j-core:2.11.+")
 }
 
 buildscript {
