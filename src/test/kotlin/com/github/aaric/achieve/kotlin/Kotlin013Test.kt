@@ -4,7 +4,7 @@ package com.github.aaric.achieve.kotlin
  * Kotlin013Test
  *
  * @author Aaric, created on 2018-08-22T12:58.
- * @since 0.1.3-SNAPSHOT
+ * @since 0.1.2-SNAPSHOT
  */
 fun main(args: Array<String>) {
     var result = ""

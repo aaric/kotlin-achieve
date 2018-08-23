@@ -4,7 +4,7 @@ package com.github.aaric.achieve.kotlin
  * Kotlin014Test
  *
  * @author Aaric, created on 2018-08-23T09:40.
- * @since 0.1.4-SNAPSHOT
+ * @since 0.1.2-SNAPSHOT
  */
 fun main(args: Array<String>) {
     var rect = Rect(3, 4)
