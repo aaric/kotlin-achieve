@@ -8,20 +8,57 @@ package com.github.aaric.achieve.kotlin
  */
 fun main(args: Array<String>) {
     var rect = Rect(3, 4)
+    println(rect.getName())
     println(rect.area())
 
     var cube = Cube(3, 4, 5)
-    println(cube.area())
+    println(cube.getName())
+    print(cube.area())
 }
 
-open class Rect(length: Int, width: Int) {
-    open fun area(): Int {
-        return 0
+interface Shape {
+    fun area(): Int
+}
+
+abstract class Graph {
+    abstract fun show()
+}
+
+open class Rect(length: Int, width: Int) : Graph(), Shape {
+
+    var length: Int = length
+    var width: Int = width
+
+    init {
+        println("length: $length, width: $width")
+    }
+
+    open fun getName(): String {
+        return "Rect"
+    }
+
+    override fun area(): Int {
+        return length * width
+    }
+
+    override fun show() {
+        println(getName())
     }
 }
 
-class Cube(length: Int, width: Int, height: Int) : Rect(length, width) {
+class Cube(length: Int, width: Int, height: Int) : Rect(length, width), Shape {
+
+    var height: Int = height
+
+    init {
+        println("height: $height")
+    }
+
+    override fun getName(): String {
+        return "Cube"
+    }
+
     override fun area(): Int {
-        return 0
+        return (height * width + length * height + width * height) * 2
     }
 }
